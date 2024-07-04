@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="author" content="" />
+    <meta name="robots" content="noindex" />
+    <meta name="googlebot" content="noindex" />
+    <meta name="description"
+        content="Elevate your dining experience with Cabriot Eat, India's first mess app offering customizable meal plans for corporate and individual users. Choose from diverse cuisines, tailor your plans, and savor culinary excellence with real-time order tracking and flexible delivery options.">
+    <title>Cabriot Eat: India's First Fully Customizable Mess App</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon_io/favicon.ico"/>
+   
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/CustomStyle.css" rel="stylesheet" />
+
+
+    <!-- fonts -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+        
+       
+
+    <!-- SEO -->
+    
+     <!--  CSS for caraousel only-->
+     <style>
+        .back{
+            background-size: 350px;
+        }
+        #slider {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+        }
+        
+        #slider figure {
+            position: relative;
+            width: 400%; /* 100% for each of the 3 slides */
+            margin: 0;
+            left: 0;
+            display: flex;
+            transition: left 0.5s ease;
+          
+        }
+        
+        #slider figure header {
+            width: 25%; /* 100% / 3 slides */
+            flex: 0 0 auto;
+            background-color: #F8F9FA;
+            
+        }
+        
+        .dots {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            padding: 0;
+        }
+        
+        .dots li {
+            width: 10px;
+            height: 10px;
+            background-color: #bba3a3;
+            margin: 0 5px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .dots li.active {
+            background-color: #2f2626;
+        }
+        
+        /* Responsive styles */
+        @media (max-width: 1024px) {
+            #slider figure {
+                width: 400%; /* 100% for each of the 3 slides */
+            }
+        
+            #slider figure header {
+                width: 25%; /* 100% / 3 slides */
+            }
+        }
+        
+        @media (max-width: 768px) {
+            #slider figure {
+                width: 400%; /* 100% for each of the 3 slides */
+            }
+        
+            #slider figure header {
+                width: 25%; /* 100% / 3 slides */
+            }
+        
+            .dots li {
+                width: 6px;
+                height: 6px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            #slider figure {
+                width: 300%; /* 100% for each of the 3 slides */
+                
+            }
+        
+            #slider figure header {
+                width: 33.33%; /* 100% / 3 slides */
+            }
+
+          
+        
+            .dots li {
+                width: 6px;
+                height: 6px;
+               
+            }
+        
+        
+        }
+    
+    </style>
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+            <div class="container px-5" >
+                <a href="/">
+                    <img class="navbar-brand" src="./assets/img/Eat.svg" alt="" />
+                </a>
+                <button class="navbar-toggler menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                   Menu
+                   <i class="bi-list"></i>
+                </button>
+                <button class="navbar-toggler menu-keypad" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="eat">Eat</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="stay">Stay</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="go">Go</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="xpress">Xpress</a></li>
+                      
+                    </ul>
+                    <button class="nav-btn navprimary-btn rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+                        <span class="d-flex align-items-center">
+                            <i class="bi-chat-text-fill me-2"></i>
+                            <span class="small">Contact</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    <!-- Header-->
+    <div id="slider" class="back">
+        <figure>
+            <!-- Mashead header-->
+    <header class="masthead home-background ">
+        <div class="container home">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6 container">
+                    <div class="mb-5 mb-lg-0 text-lg-start eat-home">
+                       
+                        <h1 class="mb-3">India's First<br /> Fully Customizable<br /> Mess App</h1>
+                        <p class="lead fw-normal text-muted mb-4">
+                            Indulge your palate in the ultimate culinary experience at Cabriot Eat - India's first fully customizable mess app. Tailored to perfection, our innovative platform offers a feast of diverse cuisines, each dish crafted with care, quality, and authenticity, ensuring a dining experience that surpasses expectations
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Masthead device mockup feature-->
+                    <div class="masthead-device-mockup">
+                        <svg class="circle green-circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="circleGradient" gradientTransform="rotate(45)">
+                                    <stop class="gradient-start-color" offset="0%"></stop>
+                                    <stop class="gradient-end-color" offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <circle cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <div class="device-wrapper ">
+                            <div class="device device-eat" data-device="iPhoneX" data-orientation="portrait"
+                                data-color="black">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mashead header-->
+    <header class="masthead home-background">
+        <div class="container  home">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6 container">
+                    <div class="mb-5 mb-lg-0 text-lg-start eat-home">
+                        
+                        <h1 class="mb-3">India's Finest<br /> Authentic Cuisines<br /> Tailored to Your Taste</h1>
+                        <p class="lead fw-normal text-muted mb-4">
+                            Explore India's Finest Authentic Cuisines at Cabriot Eat. Our diverse menu celebrates rich flavors from India and beyond, offering traditional dishes and modern interpretations for an unforgettable dining experience that caters to every taste bud
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Masthead device mockup feature-->
+                    <div class="masthead-device-mockup">
+                        <svg class="circle green-circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="circleGradient" gradientTransform="rotate(45)">
+                                    <stop class="gradient-start-color" offset="0%"></stop>
+                                    <stop class="gradient-end-color" offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <circle cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <div class="device-wrapper">
+                            <div class="device device-authe" data-device="iPhoneX" data-orientation="portrait"
+                                data-color="black">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mashead header-->
+    <header class="masthead home-background">
+        <div class="container home">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6 container">
+                    <div class="mb-5 mb-lg-0 text-lg-start eat-home">
+                        
+                        <h1 class="mb-3"> Leading<br /> Hygienic Food Preparation<br /> and Packaging Service</h1>
+                        <p class="lead fw-normal text-muted mb-4">
+                            At Cabriot Eat, we prioritize your health and safety with stringent hygiene standards. Every dish is prepared and packaged in a sanitized environment, ensuring delicious meals that meet the highest cleanliness and quality standards.
+                        </p>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Masthead device mockup feature-->
+                    <div class="masthead-device-mockup">
+                        <svg class="circle green-circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="circleGradient" gradientTransform="rotate(45)">
+                                    <stop class="gradient-start-color" offset="0%"></stop>
+                                    <stop class="gradient-end-color" offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <circle cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <div class="device-wrapper">
+                            <div class="device device-hygin" data-device="iPhoneX" data-orientation="portrait"
+                                data-color="black">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    
+    <!-- Mashead header-->
+    <header class="masthead home-background">
+        <div class="container home">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6 container">
+                    <div class="mb-5 mb-lg-0 text-lg-start eat-home">
+                       
+                        <h1 class="mb-3">India's Premier<br /> On-Demand Food<br /> Delivery Service</h1>
+                        <p class="lead fw-normal text-muted mb-4">
+                            Experience the convenience of Cabriot Eat - India's premier on-demand food delivery service. With a vast selection of restaurants and cuisines, our platform ensures that your favorite meals are delivered fresh and fast, right to your doorstep. Whether you crave local flavors or international delicacies, we deliver them with speed and reliability
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Masthead device mockup feature-->
+                    <div class="masthead-device-mockup">
+                        <svg class="circle green-circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="circleGradient" gradientTransform="rotate(45)">
+                                    <stop class="gradient-start-color" offset="0%"></stop>
+                                    <stop class="gradient-end-color" offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <circle cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <div class="device-wrapper">
+                            <div class="device device-delivery" data-device="iPhoneX" data-orientation="portrait"
+                                data-color="black">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+        </figure>
+        <ul class="dots">
+            <li class="dot active" data-dot-index="0"></li>
+            <li class="dot" data-dot-index="1"></li>
+            <li class="dot" data-dot-index="2"></li>
+            <li class="dot" data-dot-index="3"></li>
+        </ul>
+    </div>
+
+    <!-- Bulk order-->
+    
+   
+<!-- Food section -->
+
+<!-- <section class="masthead about-cabriot2" style="padding-top: 3rem; background-color: #ffffff;">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center reverse-columns">
+            <div class="col-lg-6 d-flex justify-content-center align-items-center" >
+                <img src="./assets/img/bulk-corporate-order.png" class="about-image"/>
+            </div>
+            <div class="col-lg-6">
+                <div class="mb-5 mb-lg-0 text-lg-start" >
+                    <div class="underline-about mb-5">
+                        <h5 class="head">Bulk Corporate Order</h5>
+                    </div>
+                    <p class="about-desc">
+                        Tailored to meet corporate dinning needs, Cabriot Eat presents a three-time-a-day mess service with a base menu. Our chefs customize menu based on special requirements, ensuring a personalized dinning experience for corporate clients.
+                    </p> 
+                    <div class="list">      
+                    <ul>
+                        <li>Corporates</li>
+                        <li>Educational Institutes</li>
+                        <li>Colleges</li>
+                        </ul>
+                        <ul>
+                        <li>Schools</li>
+                        <li>Hospitals</li>
+                        <li>Hostels & PG</li>
+                    </ul>
+                </div> 
+                <div class="btndiv"><button class="btn">Inquire</button></div>
+ <div class="discover-cabriot">
+                         <p class="discover-about">Discover &gt;</p>   
+                        <p class="download-profile">Download Company Profile &gt;</p>
+                    </div> 
+
+                </div>
+               </div>
+            </div>
+        </div>
+    </div>
+
+    
+</section> -->
+<section class="masthead about-cabriot2 " style="padding-top: 3rem; background-color: #ffffff;">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center reverse-columns">
+            <div class=" food-Image col-lg-6 d-flex justify-content-center align-items-center" >
+                <img src="./assets/img/bulk-corporate-order.png" class="about-image"/>
+            </div>
+            <div class="col-lg-6">
+                <div class="mb-5 mb-lg-0 text-lg-start" >
+                    <div class="mb-5 bulk-heading">
+                        <h2>Bulk Corporate Order</h2>
+                    </div>
+                   
+                    <p class="about-desc bulk-para">
+                        Tailored to meet corporate dinning needs, Cabriot Eat presents a three-time-a-day mess service with a base menu. Our chefs customize menu based on special requirements, ensuring a personalized dinning experience for corporate clients.
+                    </p> 
+                    <div class="list">      
+                        <ul>
+                            <li>Corporates</li>
+                            <li>Educational Institutes</li>
+                            <li>Colleges</li>
+                        </ul>
+                        <ul>
+                            <li>Schools</li>
+                            <li>Hospitals</li>
+                            <li>Hostels & PG</li>
+                        </ul>
+                    </div> 
+                    <div class="btndiv">
+                        <button class="btn">Inquire</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container3 home-background">
+    <div class="logo-item2">
+        <div class="img33 gx-5"> 
+            <img src="./assets/img/1.png" alt="Logo 1" > 
+        </div>
+        <div class="parse">
+      <h3>Office Lunch</h3>
+      <p>Explore diverse living spaces, including hostels, PGs, co-living spaces, service apartments, and independent homes.</p>
+    </div>
+    </div>
+    <div class="logo-item2">
+      <div class="img33"><img src="./assets/img/2.png" alt="Logo 2">
+    </div>
+    <div class="parse">  
+       <h3>Personal Meal Plan</h3>
+      <p>Explore diverse living spaces, including hostels, PGs, co-living spaces, service apartments, and independent homes.</p>
+    </div>
+
+    </div>
+    <div class="logo-item2">
+        <div class="img33">
+      <img src="./assets/img/3.png" alt="Logo 3">
+    </div>
+    <div class="parse">
+      <h3>On the go Choices</h3>
+      <p>Explore diverse living spaces, including hostels, PGs, co-living spaces, service apartments, and independent homes.</p>
+    </div>
+    </div>
+  </div>
+
+
+    <section class="py-5" id="features">
+        <div class="container px-lg-5">
+            <div class="eat-container d-flex align-items-center justify-content-center">
+                <div class="eat-serv-head text-center">
+                    <div class="container">
+                        <h1 class="pb-3 lg-h1 sm-h3" style="font-weight: 600; color: black;">India's First Fully <br>
+                            Customisable Mess App</h1>
+                        <div class="d-flex justify-content-center">
+                            <div class="eat-title-underline"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="eat-serv-head-para">
+                <div class="container-sm" id="para">
+                    <p class="lead fw-normal text-muted mb-4 text-center px-5">
+                        Introducing Cabriot Eat, India's first fully customizable mess app. Choose from diverse
+                        cuisines, tailor your meal plans, and experience culinary excellence with every bite.
+                    </p>
+                </div>
+
+            </div>
+            <div class="container px-5 my-5">
+                <div class="row gx-5">
+
+                    <div class="col-lg-8 pt-lg-5">
+                        <div class="row gx-5 row-cols-1 row-cols-md-2  px-2">
+                            <div class="col mb-5 h-100 pl-5">
+                                <div class="container d-flex gap-4">
+                                    <div class="feature"><i class="bi bi-menu-down"
+                                            style="color: #00ab58; font-size: xx-large;"></i></div>
+                                    <div>
+                                        <h2 class="h4 pt-2">Fully Customizable Menus</h2>
+                                        <p class="lead fw-normal text-muted mb-4 ">Personalize your meals based on your
+                                            preferences and dietary needs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-5 h-100 ">
+                                <div class="container d-flex gap-4  ">
+                                    <div class="feature"><i class="bi bi-basket2"
+                                            style="color: #00ab58; font-size: xx-large;"></i></div>
+                                    <div>
+                                        <h2 class="h4 pt-2">Tailored Plans</h2>
+                                        <p class="mb-0 lead fw-normal text-muted mb-4p">Explore daily, weekly, or
+                                            monthly subscription plans, catering to both individuals and corporates.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-5 mb-md-0 h-100 pl-5">
+                                <div class="container d-flex gap-4">
+                                    <!-- <div class="feature"><i class="bi bi-cake-fill" style="color: #00ab58; font-size: xx-large;"></i></div> -->
+                                    <div class="feature"><i class="bi bi-arrow-up-left-square-fill"
+                                            style="color: #00ab58; font-size: xx-large;"></i></div>
+                                    <div>
+                                        <h2 class="h4 pt-2">Culinary Excellence</h2>
+                                        <p class="mb-0 lead fw-normal text-muted mb-4p">Delight in dishes prepared by
+                                            skilled chefs with over two decades of experience, including head chefs from
+                                            5-star hotels.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col  mb-5 mb-md-0 h-100 ">
+                                <div class="container d-flex gap-4">
+                                    <div class="feature"><i class="bi bi-truck"
+                                            style="color: #00ab58; font-size: xx-large;"></i></div>
+                                    <div>
+                                        <h2 class="h4 pt-2">Real-Time Order Tracking</h2>
+                                        <p class="mb-0 lead fw-normal text-muted mb-4p">Keep tabs on your order with our
+                                            seamless real-time tracking feature.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col  mb-5 mb-md-0 h-100 mt-lg-5 pl-5">
+                                <div class="container d-flex gap-4">
+                                    <div class="feature"><i class="bi bi-asterisk"
+                                            style="color: #00ab58; font-size: xx-large;"></i></div>
+                                    <div>
+                                        <h2 class="h4 pt-2">No Additives</h2>
+                                        <p class="mb-0 lead fw-normal text-muted mb-4p">Bid farewell to artificial
+                                            colors, preservatives, and ajinomoto, as we prioritize authenticity and
+                                            freshness.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col  mb-5 mb-md-0 h-100 mt-lg-5">
+                                <div class="container d-flex gap-4">
+                                    <div class="feature"><i class="bi bi-piggy-bank-fill"
+                                            style="color: #00ab58; font-size: xx-large;"></i></div>
+                                    <div>
+                                        <h2 class="h4 pt-2">Food Donation Feature</h2>
+                                        <p class="mb-0 lead fw-normal text-muted mb-4p">
+                                            Unable to enjoy your subscribed meal? Donate meals to those in need instead
+                                            of canceling. Make a difference with a click.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-5 mb-lg-0 d-flex align-items-center justify-content-center">
+                        <img class="pt-5" id="stay-img" style="width: 350px;" src="./assets/img/eat_man.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="download-section eat-download-section" id="download"
+        style="background-image: linear-gradient(to right top, #00ab58, #00b05a, #00b45d, #00b95f, #00be62);;">
+        <div class="container" id="early-access">
+            <div class="set">
+                <h2 class="d-none d-lg-block text-center text-xxl" style="color: white;">Get Early Access to Cabriot
+                </h2>
+                <h3 class="d-block d-lg-none text-xxl" style="color: white;">Get Early Access to Cabriot</h3>
+
+                <div class="d-flex justify-content-center">
+                    <p class="">Cabriot is gearing up to revolutionize your lifestyle, and we want you to be part of the
+                        journey from the
+                        start. </p>
+                </div>
+            </div>
+            <form id="early-access">
+                <input type="hidden" name="access_key" value="023b4922-8343-4eb2-b160-2f22c879a896">
+                <input id="email" type="email" name="Email" placeholder="Enter your Email Address" required
+                    data-sb-validations="required,email" />
+                <div class="d-grid submit-download"><button class="btn-primary text-white" id="submitButton"
+                        type="submit">Submit</button></div>
+                <div id="access-result"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer-->
+    <footer>
+        <div class="container">
+            <img src="./assets/img/c_white.svg" alt="" />
+            <h3>CABRIOT VENTURES PRIVATE LIMITED</h3>
+            <p>Door No : 64/2113, Nechikkadan Tower</p>
+            <p>Eranjipalam, Kozhikode 673006</p>
+            <p class="copyrights">&copy; Cabriot 2024</p>
+        </div>
+    </footer>
+    <a
+    href="https://wa.me/+918714858555"
+    class="whatsapp_float"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i class="fa fa-whatsapp whatsapp-icon"></i>
+</a>
+<!-- Feedback Modal-->
+<div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-gradient-primary-to-secondary p-4">
+                <h5 class="modal-title font-alt text-white" id="feedbackModalLabel">Connect with us!</h5>
+                <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div id="modal-body" class="modal-body border-0 p-4">
+                <form id="formSubmit">
+                    <!-- Name input-->
+                    <input type="hidden" name="access_key" value="023b4922-8343-4eb2-b160-2f22c879a896">
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="name" name="Name" type="text" placeholder="Enter your name..." required />
+                        <label for="name">Full name</label>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                    </div>
+                    <!-- Email address input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="email" type="email" name="Email" placeholder="name@example.com" required />
+                        <label for="email">Email address</label>
+                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                    </div>
+                    <!-- Phone number input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="phone" type="tel" name="Contact" placeholder="(123) 456-7890" required />
+                        <label for="phone">Phone number</label>
+                        <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                    </div>
+                    <!-- Message input-->
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" id="message" type="text" name="Message" placeholder="Enter your message here..." style="height: 10rem" required></textarea>
+                        <label for="message">Message</label>
+                        <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                    </div>
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3">
+                            <div class="fw-bolder">Form submission successful!</div>
+                            <br />
+                        </div>
+                    </div>
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                    <!-- Submit Button-->
+                    <div class="d-grid"><button class="btn inner-btn-primary rounded-pill btn-lg" id="submitButton" type="submit">Submit</button></div>
+                </form>
+            </div>
+            <div id="result"></div>
+        </div>
+    </div>
+</div>
+<script>
+    const form = document.getElementById('formSubmit');
+    const result = document.getElementById('result');
+    const accessResult = document.getElementById('access-result');
+    const modalBody = document.getElementById('modal-body');
+    const earlyAccess = document.getElementById('early-access');
+
+    form.addEventListener('submit', function(e) {
+        const formData = new FormData(form);
+        e.preventDefault();
+    
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+    
+        // Display loading message while submitting
+        result.innerHTML = "Please wait...";
+        result.style.textAlign = "center";
+        result.style.marginTop = "15px";
+        result.style.textAlign = "center";
+        result.style.marginBottom = "37px"
+        result.style.display = "block";
+        result.style.color = "#00C064";
+    
+        fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+            .then(async (response) => {
+                let jsonResponse = await response.json();
+                if (response.status == 200) {  
+                    result.innerHTML = "Form Submitted Successfully 🎉";
+                    // modalBody.style.display = "none";
+                    // result.innerHTML = `
+                    //     <img src="./assets/img/success-svgrepo-com.svg"/>
+                    //     <p style="color: #00cc66;">Form Submitted Successfully</p>
+                    //     <p>Thank you! The form has been submitted successfully. We will reply to you soon!</p>
+                    // `;
+                } else {
+                    console.log(response);
+                    modalBody.style.display = "none";
+                    result.innerHTML = "Error sending message!";
+                }
+            })
+            .catch(error => {
+                console.log(error);
+                modalBody.style.display = "none";
+                result.innerHTML = "Something went wrong!";
+            })
+            .then(function() {
+                // Reset form and hide result after 3 seconds
+                form.reset();
+                setTimeout(() => {
+                    result.style.display = "none";
+                    // modalBody.style.display = "block";
+                }, 3000);
+            });
+    });
+
+
+    earlyAccess.addEventListener('submit', function(e) {
+        const formData = new FormData(form);
+        e.preventDefault();
+    
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+        accessResult.innerHTML = "Please wait...";
+        accessResult.style.textAlign = "center";
+        accessResult.style.marginTop = "15px";
+        accessResult.style.textAlign = "center";
+        accessResult.style.display = "block";
+        accessResult.style.color = "#fff"
+    
+        fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+            .then(async (response) => {
+                let jsonResponse = await response.json();
+                if (response.status == 200) {  
+                    accessResult.innerHTML = "Email Submitted Successfully 🎉";
+                    // modalBody.style.display = "none";
+                    // result.innerHTML = `
+                    //     <img src="./assets/img/success-svgrepo-com.svg"/>
+                    //     <p style="color: #00cc66;">Form Submitted Successfully</p>
+                    //     <p>Thank you! The form has been submitted successfully. We will reply to you soon!</p>
+                    // `;
+                } else {
+                    console.log(response);
+                    modalBody.style.display = "none";
+                    accessResult.innerHTML = "Error sending message!";
+                }
+            })
+            .catch(error => {
+                console.log(error);
+                modalBody.style.display = "none";
+                accessResult.innerHTML = "Something went wrong!";
+            })
+            .then(function() {
+                form.reset();
+                setTimeout(() => {
+                    accessResult.style.display = "none";
+                    // modalBody.style.display = "block";
+                }, 3000);
+            });
+    });
+</script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+
+</html>
